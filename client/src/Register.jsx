@@ -167,7 +167,7 @@ const Register = () => {
                             Must match the first password input field.
                         </p>
 
-                        <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
+                        <button>Sign Up</button>
                     </form>
                     <p>
                         Already registered?<br />
