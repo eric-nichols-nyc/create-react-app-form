@@ -132,7 +132,6 @@ const Register = () => {
                             id="password"
                             onChange={(e) => setPwd(e.target.value)}
                             value={pwd}
-                            required
                             aria-invalid={validPwd ? "false" : "true"}
                             aria-describedby="pwdnote"
                             onFocus={() => setPwdFocus(true)}
@@ -156,7 +155,6 @@ const Register = () => {
                             id="confirm_pwd"
                             onChange={(e) => setMatchPwd(e.target.value)}
                             value={matchPwd}
-                            required
                             aria-invalid={validMatch ? "false" : "true"}
                             aria-describedby="confirmnote"
                             onFocus={() => setMatchFocus(true)}
