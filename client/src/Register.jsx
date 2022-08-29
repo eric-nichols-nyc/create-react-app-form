@@ -5,10 +5,10 @@ import axios from './api/axios';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const REGISTER_URL = '/api/register';
+const REGISTER_URL = '/register';
 
 const Register = () => {
-    console.log(process.env.REACT_APP_PUBLIC_URL);
+    console.log(process.env.REACT_APP_PUBLIC_URL)
     const userRef = useRef();
     const errRef = useRef();
 
@@ -55,11 +55,7 @@ const Register = () => {
         }
         try {
             const response = await axios.post(REGISTER_URL,
-                JSON.stringify({ user, pwd }),
-                {
-                    headers: { 'Content-Type': 'application/json' },
-                    withCredentials: true
-                }
+                JSON.stringify({ user, pwd })
             );
             console.log(response?.data);
             console.log(response?.accessToken);
@@ -75,11 +71,8 @@ const Register = () => {
                 setErrMsg('No Server Response');
             } else if (err.response?.status === 409) {
                 setErrMsg('Username Taken');
-            } else if (err.response?.status === 500) {
-                console.log(err)
-              setErrMsg('Internal Server Error');
-            }else{
-                setErrMsg('Registration Failed'); 
+            } else {
+                setErrMsg('Registration Failed')
             }
             errRef.current.focus();
         }
@@ -135,6 +128,7 @@ const Register = () => {
                             id="password"
                             onChange={(e) => setPwd(e.target.value)}
                             value={pwd}
+                            required
                             aria-invalid={validPwd ? "false" : "true"}
                             aria-describedby="pwdnote"
                             onFocus={() => setPwdFocus(true)}
@@ -158,6 +152,7 @@ const Register = () => {
                             id="confirm_pwd"
                             onChange={(e) => setMatchPwd(e.target.value)}
                             value={matchPwd}
+                            required
                             aria-invalid={validMatch ? "false" : "true"}
                             aria-describedby="confirmnote"
                             onFocus={() => setMatchFocus(true)}
@@ -168,7 +163,7 @@ const Register = () => {
                             Must match the first password input field.
                         </p>
 
-                        <button>Sign Up</button>
+                        <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
                     </form>
                     <p>
                         Already registered?<br />
