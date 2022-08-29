@@ -39,8 +39,8 @@ app.use(express.json());
 
 // routes
 app.use('/', require('./routes/root'));
-app.use('/register', require('./routes/register'));
-app.use('/auth', require('./routes/auth'));
+app.use('/api/register', require('./routes/register'));
+app.use('/api/auth', require('./routes/auth'));
 app.use('/employees', require('./routes/api/employees'));
 
 app.use(errorHandler);
