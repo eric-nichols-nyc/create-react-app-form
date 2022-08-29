@@ -16,18 +16,28 @@ const whitelist = [
   'http://localhost:3000',
 ];
 const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1 || !origin) {
-          console.log(origin)
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    credentials: true,
-    optionsSuccessStatus: 200
-}
-app.use(cors(corsOptions));
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      console.log(origin);
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  optionsSuccessStatus: 200,
+};
+// app.use(cors(corsOptions));
+// app.use(
+//   cors({
+//     allowedHeaders: ['sessionId', 'Content-Type'],
+//     exposedHeaders: ['sessionId'],
+//     origin: '*',
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//     preflightContinue: false,
+//   })
+// );
 
 // built-in middleware to handle urlencoded data
 // in other words, form data:  
