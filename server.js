@@ -38,10 +38,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // routes
-app.use('/', require('./routes/root'));
-app.use('/api/register', require('./routes/register'));
-app.use('/api/auth', require('./routes/auth'));
-app.use('/employees', require('./routes/api/employees'));
+app.use('/', require('./api/root'));
+app.use('/api/register', require('./api/register'));
+app.use('/api/auth', require('./api/auth'));
+app.use('/employees', require('./api/api/employees'));
 
 app.use(errorHandler);
 
