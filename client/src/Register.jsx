@@ -8,6 +8,7 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const REGISTER_URL = '/register';
 
 const Register = () => {
+    console.log(process.env.REACT_APP_PUBLIC_URL);
     const userRef = useRef();
     const errRef = useRef();
 
