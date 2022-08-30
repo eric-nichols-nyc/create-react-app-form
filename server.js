@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 const cors = require('cors');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
@@ -40,8 +39,8 @@ app.use(express.json());
 
 // routes
 app.use('/api/register', require('./api/register'));
-app.use('/api/auth', require('./api/auth'));
-app.use('/employees', require('./api/api/employees'));
+// app.use('/api/auth', require('./api/auth'));
+// app.use('/employees', require('./api/api/employees'));
 
 app.use(errorHandler);
 

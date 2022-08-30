@@ -77,3 +77,5 @@
 20220830	14:02:16	781e45f8-7994-41cf-b696-db6d0c929ddc	POST	http://localhost:3000	/api/register
 20220830	14:15:07	b1fa79ec-da0e-495f-ae4d-634c978b0ef6	OPTIONS	http://localhost:3000	/api/register
 20220830	14:15:07	b521fa47-adc5-45a3-9379-74c4af91f0e5	POST	http://localhost:3000	/api/register
+20220830	14:32:26	c470f648-422a-4fb1-9ded-f28e88e55acf	OPTIONS	http://localhost:3000	/api/register
+20220830	14:32:26	8f89f460-6b9f-44fe-8653-24550a4bae8a	POST	http://localhost:3000	/api/register
