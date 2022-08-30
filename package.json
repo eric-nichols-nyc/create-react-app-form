@@ -8,7 +8,7 @@
     "dev": "nodemon server",
     "client": "cd client && npm start",
     "build": "cd client && npm install && npm run build",
-    "concurrent": "concurrently \"npm run dev\" \"npm run client\""
+    "concurrently": "concurrently \"npm run dev\" \"npm run client\""
   },
   "author": "Eric Nichols",
   "license": "ISC",

@@ -28,16 +28,8 @@ const corsOptions = {
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   optionsSuccessStatus: 200,
 };
-// app.use(cors(corsOptions));
-// app.use(
-//   cors({
-//     allowedHeaders: ['sessionId', 'Content-Type'],
-//     exposedHeaders: ['sessionId'],
-//     origin: '*',
-//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-//     preflightContinue: false,
-//   })
-// );
+
+app.use(cors(corsOptions));
 
 // built-in middleware to handle urlencoded data
 // in other words, form data:  
