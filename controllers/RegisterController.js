@@ -16,10 +16,10 @@ const handleNewUser = async (req, res) => {
   if (duplicate) return res.sendStatus(409); //Conflict 
   try {
       //encrypt the password
-      const hashedPwd = await bcrypt.hash(pwd, 10);
+      // const hashedPwd = await bcrypt.hash(pwd, 10);
       //store the new user
-      const newUser = { "username": user, "password": hashedPwd };
-      usersDB.setUsers([...usersDB.users, newUser]);
+      //const newUser = { "username": user, "password": hashedPwd };
+     // usersDB.setUsers([...usersDB.users, newUser]);
       // await fsPromises.writeFile(
       //     path.join(__dirname, '..', 'model', 'users.json'),
       //     JSON.stringify(usersDB.users)
