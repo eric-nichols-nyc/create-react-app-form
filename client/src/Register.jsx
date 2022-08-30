@@ -8,7 +8,6 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const REGISTER_URL = '/api/register';
 
 const Register = () => {
-    console.log(process.env.REACT_APP_PUBLIC_URL)
     const userRef = useRef();
     const errRef = useRef();
 
@@ -57,7 +56,8 @@ const Register = () => {
             const response = await axios.post(REGISTER_URL,
                 JSON.stringify({ user, pwd }),
                 {
-                    headers: { 'Content-Type': 'application/json' }                }
+                    headers: { 'Content-Type': 'application/json' }                
+                }
             );
             console.log(response?.data);
             console.log(response?.accessToken);

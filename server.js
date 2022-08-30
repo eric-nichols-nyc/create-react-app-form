@@ -18,7 +18,6 @@ const whitelist = [
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== -1 || !origin) {
-      console.log(origin);
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
@@ -40,7 +39,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // routes
-app.use('/', require('./api/root'));
 app.use('/api/register', require('./api/register'));
 app.use('/api/auth', require('./api/auth'));
 app.use('/employees', require('./api/api/employees'));
