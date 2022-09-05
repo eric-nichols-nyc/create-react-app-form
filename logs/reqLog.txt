@@ -131,3 +131,11 @@
 20220903	17:47:30	77edab38-cc3b-4e5a-abec-e419a437fdd7	GET	undefined	/api/refresh
 20220903	17:59:11	6e27ef1c-7780-4b49-8036-70b94457ba31	POST	undefined	/api/auth
 20220903	17:59:13	23e9d5fa-595a-4fff-9753-fe5bb1b12dc6	GET	undefined	/api/refresh
+20220905	09:55:18	1af16c78-7a23-4c35-8eb1-6eead4b09547	OPTIONS	http://localhost:3000	/auth
+20220905	09:58:23	dcb30e3e-8543-42f2-96ef-86ed4f75f741	POST	undefined	/api/auth
+20220905	10:02:12	eebf8273-7b2c-46cd-8764-fad4e903275c	OPTIONS	http://localhost:3000	/auth
+20220905	10:02:12	c830c7db-b161-4760-8290-d1966a87073e	POST	http://localhost:3000	/auth
+20220905	10:02:35	13c2a38d-97d7-4155-a271-657bd5b4765c	OPTIONS	http://localhost:3000	/auth
+20220905	10:02:35	8aa59f66-d3b4-43d1-9ad5-5a384c2a0951	POST	http://localhost:3000	/auth
+20220905	10:04:05	158cd72e-42e4-4d8f-adf3-3a84ce60ee10	OPTIONS	http://localhost:3000	/api/auth
+20220905	10:04:05	20ced6f5-717b-4b6f-a2c9-000691356dfd	POST	http://localhost:3000	/api/auth
