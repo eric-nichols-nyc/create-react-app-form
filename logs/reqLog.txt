@@ -139,3 +139,7 @@
 20220905	10:02:35	8aa59f66-d3b4-43d1-9ad5-5a384c2a0951	POST	http://localhost:3000	/auth
 20220905	10:04:05	158cd72e-42e4-4d8f-adf3-3a84ce60ee10	OPTIONS	http://localhost:3000	/api/auth
 20220905	10:04:05	20ced6f5-717b-4b6f-a2c9-000691356dfd	POST	http://localhost:3000	/api/auth
+20220905	10:31:36	ae649625-f7c6-46c1-80c7-94cbb6daf578	OPTIONS	http://localhost:3000	/api/auth
+20220905	10:31:36	2c106ca8-1d07-42ab-9823-d89c8d86831d	POST	http://localhost:3000	/api/auth
+20220905	10:32:07	2b5e74f9-fdca-4405-8b10-be43327bb407	OPTIONS	http://localhost:3000	/api/auth
+20220905	10:32:07	1214d133-9318-4e15-aa8c-fb2adf10a63a	POST	http://localhost:3000	/api/auth
